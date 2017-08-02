@@ -4,14 +4,12 @@ c = int(input())
 
 num_list = [a, b, c]
 
-s = []
-for i in num_list:
-    if i not in s:
-        s.append(i)
+num_dict = {i: num_list.count(i) for i in num_list}
 
-if len(s) == 1:
-    print(3)
-elif len(s) == 2:
-    print(2)
-else:
-    print(0)
+for value in num_dict.values():
+    if value > 1:
+        print(value)
+        break
+    else:
+        print(0)
+        break
