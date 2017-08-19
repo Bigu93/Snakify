@@ -1,8 +1,5 @@
 string = input()
 
-first = string.find('h')
-last = string.rfind('h')
-
 new_string = ""
 for char in range(len(string)):
     if (char == string.find('h') or
