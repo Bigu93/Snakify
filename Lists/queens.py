@@ -16,7 +16,7 @@ for i, x in enumerate(coordinates):
         else:
             yes_and_no.append("NO")
 
-if yes_and_no.count("YES") > 1:
+if yes_and_no.count("YES") >= 1:
     print("YES")
 else:
     print("NO")
